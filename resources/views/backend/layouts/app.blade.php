@@ -7,14 +7,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>DevLearn | Dashboard | Admin Panel</title>
         <!-- Favicon -->
-        <link rel="icon" href="{{ asset('/img/avatar/logo.svg') }}" type="image/x-icon">
-
+        {{-- <link rel="icon" href="{{ asset('/img/avatar/logo.svg') }}" type="image/x-icon"> --}}
+        <!-- Links -->
+        <link rel="icon" type="image/png" href="{{ asset('html-css/images/favicon.png') }}" />
         <!-- Dropzone CSS -->
         <link rel="stylesheet" href="{{ asset('plugins/dropzone/dropzone.css')}}">
         <!-- Quill stylesheet -->
         <link href="{{ asset('plugins/quill.snow.css') }}" rel="stylesheet">
         <!-- Custom styles -->
         <link rel="stylesheet" href="{{ asset('css/style.min.css')}}">
+        {{--start js file --}}
+        @include('backend.layouts.css')
+        {{-- end js file --}}
         @toastr_css
     </head>
 
@@ -55,7 +59,7 @@
     @include('backend.layouts.js')
     {{-- end js file --}}
 
-    @jquery <br />
-    @toastr_js <br />
-    @toastr_render <br/>
+    @jquery 
+    @toastr_js 
+    @toastr_render
 </html>

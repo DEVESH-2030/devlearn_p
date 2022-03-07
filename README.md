@@ -70,4 +70,5 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 6. php artisan cache:clear, route:clear, config:clear etc...
 7. php artisan migrate.
 8. php artisan db:seed.
-9. 
+9. create a .env file to connect with your database.
+10. can follow as env-example file to .env file.
